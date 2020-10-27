@@ -22,14 +22,16 @@ async function createQuerySample(){
             phone: 1234567,
             password: 1111,
         })
-        const user4 = await User.create({
+        const findByPk = await User.findByPk(1);
+
+        const createNewUser = await User.create({
             name: "Suresh Ramdin",
-            email: "suresh.ramdin@gmail.com",
+            email: "suresh.poepmetcurrie@gmail.com",
             phone: 1234567,
-            password: 1111,
+            password: 1111
         })
 
-        return [user1, user2, user3, user4].map(item => item.get({ plain: true }));
+        return [user1, user2, user3, findByPk, createNewUser].map(item => item.get({ plain: true }));
     } catch (e) {
         console.error(e);
     }

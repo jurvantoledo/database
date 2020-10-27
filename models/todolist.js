@@ -14,7 +14,9 @@ module.exports = (sequelize, DataTypes) => {
     }
   };
   todoList.init({
-    name: DataTypes.STRING
+    name: DataTypes.STRING,
+    user_Id: DataTypes.INTEGER,
+
   }, {
     sequelize,
     modelName: 'todoList',
