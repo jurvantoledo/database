@@ -6,17 +6,20 @@ module.exports = {
       "todoLists",
       [
         {
-          name: "Jur van Toledo",
+          name: "Jur's Work list",
+          userId: 1,
           createdAt: new Date(),
           updatedAt: new Date(),
         },
         {
-          name: "Nino Christiaans",
+          name: "Job's personal List",
+          userId: 2,
           createdAt: new Date(),
           updatedAt: new Date(),
         },
         {
-          name: "Job Stouthart",
+          name: "Nino's book list",
+          userId: 3,
           createdAt: new Date(),
           updatedAt: new Date(),
         },
