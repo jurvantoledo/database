@@ -10,9 +10,10 @@ module.exports = (sequelize, DataTypes) => {
      * The `models/index` file will call this method automatically.
      */
     static associate(models) {
-      // define association here
+      itemTag.belongsTo(models.todoItem);
+      itemTag.belongsTo(models.tag);
     }
-  };
+  }
   itemTag.init({
     todoItemId: DataTypes.INTEGER,
     tagId: DataTypes.INTEGER
